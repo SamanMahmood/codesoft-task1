@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: skyblue;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+nav .logo {
+  font-size: 2rem;
+  font-weight: 400;
+  color: yellow;
+  cursor: pointer;
+}
+nav .logo:hover {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(244, 244, 55);
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: yellow;
+  font-size: 1.3rem;
+}
+.slideshow-container {
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 100%;
+  height: 40vw;
+}
+
+.text {
+  color: #f2f2f2;
+  background-color: rgb(183 180 180);
+  margin-left: 40%;
+  border-radius: 6px;
+  font-size: 3rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.9s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.secondsection {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.mainsec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sec1 {
+  border-style: solid;
+  border-color: yellow;
+  width: 20rem;
+  padding: 15px;
+  margin: 10px;
+}
+p {
+  font-size: 1.2rem;
+}
+.maintext {
+  width: 30%;
+  margin-top: 10rem;
+  margin-left: 1rem;
+}
+.maintext .btn {
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 2rem;
+  background-color: yellow;
+  color: black;
+  font-size: medium;
+  border: none;
+}
+.maintext .btn a {
+  text-decoration: none;
+  color: black;
+}
+.thirdsection {
+  display: flex;
+  justify-content: center;
+}
+
+#imglogo {
+  width: 40vw;
+  height: 59vh;
+  margin-top: 8rem;
+}
+.thirdtext {
+  width: 30%;
+  margin-top: 10rem;
+  padding: 10px;
+}
+.btn {
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 2rem;
+  background-color: yellow;
+  color: black;
+  font-size: medium;
+  border: none;
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+.fourthsection hr {
+  height: 0.2rem;
+  width: 50%;
+  margin-left: 17rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+#img {
+  width: 345px;
+  height: 200px;
+  border-radius: 3px;
+  box-shadow: #717171;
+}
+.fourheading {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.fourhead {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.foursec {
+  border-style: groove;
+  padding: 10px;
+  margin-bottom: 5rem;
+  border: none;
+  border-style: solid;
+  border-color: yellow;
+}
+
+.footerlast {
+  background-color: #aaaaaa;
+}
+.footersec {
+  width: 75%;
+  height: 80vh;
+  margin-left: 8rem;
+  padding: 15px;
+  background-color: #aaaaaa;
+  color: black;
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: repeat(4, 2fr);
+}
+.inersec li {
+  list-style: none;
+  line-height: 1.6rem;
+}
+.footsec h3 {
+  margin-top: 7rem;
+}
+.footsec .inersec {
+  margin-left: 1.5rem;
+  font-size: 17px;
+  color: rgb(28, 28, 185);
+}
